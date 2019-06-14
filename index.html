@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 3</title>
+  </head>
+
+  <body background="./images/background.png" id="body">
+    <center>
+      <br>
+    <table style="text-align: center;" width="1000" height="35" id="score_table">
+      <tr>
+        <td id="score" style="visibility:hidden;">
+        </td>
+      </tr>
+    </table>
+
+    <table style="text-align: center;"  id="starting" >
+      <tr>
+        <td id="starting_inside">
+            <h1 style="color: red">
+              WELCOME TO THE GAME
+            </h1>
+            <br>
+	    The objective of the game is to reach the final line by collecting maximum coins and avoiding obstacles.
+            <h3 style="text-align: left;">Controls:</h3>
+            <ol style="text-align: left;">
+              <li>Use a/d keys to change the track</li>
+              <li>Use space bar to jump</li>
+              <li>Use g key to toggle between grayscale and colour</li>
+            </ol>
+            Click on the play button to start the game. It will take 5-10 seconds for the game to start<br><br>
+            <img src="./images/play.png" height="100" onclick="start_game()">
+        </td>
+      </tr>
+    </table><br>
+
+    <canvas id="glcanvas" width="1000" height="650" style="visibility: hidden;">
+      If you see this that means that your browser does not suppor canvas. Update your browser.
+    </canvas>
+
+    </center>
+    <iframe src="./music/background_music.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio id="player" autoplay loop>
+      <source src="./music/background_music.mp3" type="audio/mp3">
+    </audio>
+  </body>
+  <script src="./script/gl-matrix.js"></script>
+  <script src="./script/texture.js"></script>
+  <script src="./script/events.js"></script>
+  <script src="./script/bus_back.js"></script>
+  <script src="./script/bus_body.js"></script>
+  <script src="./script/enemy.js"></script>
+  <script src="./script/floor.js"></script>
+  <script src="./script/end.js"></script>
+  <script src="./script/side_wall.js"></script>
+  <script src="./script/flying_boost.js"></script>
+  <script src="./script/jumping_boots.js"></script>
+  <script src="./script/jhadiya.js"></script>
+  <script src="./script/wall.js"></script>
+  <script src="./script/speedbreaker.js"></script>
+  <script src="./script/track.js"></script>
+  <script src="./script/coins.js"></script>
+  <script src="./script/cubeprime.js"></script>
+  <script src="./script/main.js"></script>
+</html>
